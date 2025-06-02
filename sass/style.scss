@@ -1,0 +1,376 @@
+// Variables
+$color-principal: #E10413;
+$color-hover: palevioletred;
+$fuente-principal: 'Inria Serif', serif;
+$fuente-formularios: 'Georgia', serif;
+
+// Reset general
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+// HEADER
+.header {
+background-color: $color-principal;
+
+.navbar {
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-family: $fuente-principal;
+    }
+    }
+}
+}
+
+// TITULOS GENERALES
+h1 {
+text-align: center;
+color: $color-principal;
+padding: 70px;
+}
+
+h2 {
+text-align: center;
+}
+
+// HOME: sección principal
+.section-principal {
+background: url('../Images/Home.jpg') center/cover no-repeat;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+color: white;
+text-align: center;
+
+h1 {
+    font-size: 72px;
+    font-family: $fuente-principal;
+    color: $color-principal;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: $fuente-principal;
+    color: black;
+}
+
+img {
+    width: 6.25rem;
+    margin-left: 1.25rem;
+}
+}
+
+.section-title {
+font-size: 40px;
+}
+
+// SECOND SECTION
+.secondSection {
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+font-size: 70px;
+
+h1 {
+    font-size: 70px;
+    font-family: $fuente-principal;
+    color: $color-principal;
+    line-height: 50px;
+    text-align: center;
+}
+}
+
+// Botón
+.buttonConoceMas {
+border: none;
+background-color: $color-principal;
+color: white;
+width: 301px;
+height: 75px;
+border-radius: 60px;
+font-size: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px auto;
+text-decoration: none;
+
+&:hover {
+    background-color: $color-hover;
+}
+}
+
+// Tarjetas
+.cardContainer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+gap: 40px;
+
+.card {
+    width: 272px;
+    height: 340px;
+    border: 1px solid $color-principal;
+    border-radius: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .card-img {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    }
+
+    .card-text {
+    padding: 12px;
+    text-align: center;
+    font-family: $fuente-principal;
+    color: black;
+    }
+}
+}
+
+// THIRD SECTION
+.thirdSection {
+background: url('../Images/sant.jpg') center/cover no-repeat;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+color: white;
+text-align: center;
+margin-top: 30px;
+
+h1 {
+    font-size: 45px;
+    font-family: $fuente-principal;
+    color: $color-principal;
+}
+}
+
+// SERVICIOS
+.servicios-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 40px;
+padding: 0 40px 60px;
+max-width: 1200px;
+margin: 0 auto;
+
+.servicio {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    border: 1px solid darken($color-principal, 5%);
+    border-radius: 60px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+
+    .img-servicio {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .texto-servicio {
+    h2 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    }
+}
+}
+
+// PRODUCTOS
+.container-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 40px;
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+
+.cards {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    font-family: $fuente-principal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+    img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border: 1px solid $color-principal;
+    border-radius: 40px;
+    }
+
+    h3 {
+    margin: 20px;
+    font-size: 20px;
+    }
+
+    p {
+    margin: 20px;
+    font-size: 15px;
+    }
+
+    button {
+    background-color: $color-principal;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    margin-top: 30px;
+    font-family: $fuente-principal;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+    }
+}
+}
+
+// NOSOTROS
+.texto-nosotros p {
+max-width: 800px;
+margin: 0 auto;
+padding: 40px 20px;
+text-align: justify;
+font-family: $fuente-principal;
+font-size: 16px;
+line-height: 1.6;
+color: #000;
+}
+
+.imagenes-nosotros {
+display: flex;
+justify-content: center;
+align-items: center;
+
+.imagen-principal,
+.imagen-superpuesta {
+    width: 350px;
+    height: 350px;
+}
+}
+
+// CONTACTO
+.contacto {
+max-width: 700px;
+margin: 0 auto;
+padding: 2rem 1rem;
+font-family: $fuente-formularios;
+color: darken($color-principal, 10%);
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.fila {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.campo.full {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+input,
+textarea {
+    border: 1px solid darken($color-principal, 10%);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.boton {
+    text-align: center;
+
+    button {
+    background-color: darken($color-principal, 10%);
+    color: white;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+    }
+}
+}
+
+

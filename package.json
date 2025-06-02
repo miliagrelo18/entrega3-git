@@ -1,0 +1,19 @@
+{
+  "name": "comision-87885",
+  "version": "1.0.0",
+  "description": "Este proyecto es una web desarrollada como parte de una entrega de práctica, inspirado en un enfoque holístico y espiritual. Incluye información sobre servicios como tarot, limpiezas energéticas y magia blanca.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miliagrelo18/entrega3-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miliagrelo18/entrega3-git/issues"
+  },
+  "homepage": "https://github.com/miliagrelo18/entrega3-git#readme"
+}
