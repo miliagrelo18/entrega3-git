@@ -118,6 +118,11 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardContainer .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .cardContainer .card .card-img {
   flex: 1;
@@ -127,7 +132,7 @@ h2 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .cardContainer .card .card-text {
@@ -172,6 +177,11 @@ h2 {
   padding: 20px;
   gap: 20px;
   background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicios-grid .servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .servicios-grid .servicio .img-servicio {
   width: 100%;
@@ -319,4 +329,47 @@ h2 {
 }
 .contacto .boton button:hover {
   background-color: palevioletred;
+}
+
+.footer {
+  background-color: #fdf6f0;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  color: #5e3c3c;
+  font-family: "Montserrat", sans-serif;
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer .footer-container .footer-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+.footer .footer-container p {
+  margin: 0.3rem 0;
+  font-size: 0.875rem;
+}
+.footer .footer-container .footer-redes {
+  margin-top: 1rem;
+}
+.footer .footer-container .footer-redes p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer .footer-container .footer-redes .redes-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  font-size: 1.5rem;
+}
+.footer .footer-container .footer-redes .redes-icons a {
+  color: #5e3c3c;
+  transition: transform 0.3s ease;
+}
+.footer .footer-container .footer-redes .redes-icons a:hover {
+  transform: scale(1.2);
+  color: #b17a61;
 }/*# sourceMappingURL=style.css.map */
