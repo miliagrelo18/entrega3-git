@@ -374,7 +374,6 @@ h2 {
   color: #b17a61;
 }
 
-
 @media (max-width: 767px) {
   .header .navbar ul {
     flex-direction: column;
@@ -425,7 +424,7 @@ h2 {
     flex-direction: column;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) and (max-width: 320px) {
   .header .navbar ul li a {
     font-size: 16px;
   }
@@ -445,6 +444,5 @@ h2 {
     width: 100%;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
