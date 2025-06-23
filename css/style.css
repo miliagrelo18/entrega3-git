@@ -384,12 +384,14 @@ h2 {
   }
   .section-principal {
     padding: 20px;
+    background: url("../Images/Home.jpg") center/cover no-repeat;
+    gap: 10px;
   }
   .section-principal h1 {
-    font-size: 32px;
+    font-size: 40px;
   }
   .section-principal h2 {
-    font-size: 18px;
+    font-size: 25px;
   }
   .secondSection {
     font-size: 30px;
@@ -429,10 +431,14 @@ h2 {
     font-size: 16px;
   }
   .section-principal h1 {
-    font-size: 24px;
+    font-size: 35px;
   }
   .section-principal h2 {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .section-principal {
+    background: url("../Images/Home.jpg") center/cover no-repeat;
+    gap: 10px;
   }
   .secondSection h1 {
     font-size: 26px;
@@ -442,6 +448,28 @@ h2 {
   }
   .container-cards .cards {
     width: 100%;
+  }
+  .texto-nosotros p {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: justify;
+    font-family: "Inria Serif", serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #000;
+  }
+  .imagenes-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .imagenes-nosotros .imagen-principal,
+  .imagenes-nosotros .imagen-superpuesta {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
   }
 }
 
